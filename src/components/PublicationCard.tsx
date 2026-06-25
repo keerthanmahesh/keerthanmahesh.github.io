@@ -11,9 +11,9 @@ export function PublicationCard({ pub }: { pub: Publication }) {
       </p>
       {pub.summary && <p className="text-fg/80 text-sm mt-2 leading-relaxed">{pub.summary}</p>}
       <div className="flex gap-4 mt-2 font-mono text-xs">
-        {pub.links?.pdf && <a href={pub.links.pdf} className="text-green hover:underline">pdf →</a>}
-        {pub.links?.doi && <a href={pub.links.doi} className="text-green hover:underline">doi →</a>}
-        {pub.links?.arxiv && <a href={pub.links.arxiv} className="text-green hover:underline">arxiv →</a>}
+        {pub.links?.pdf && <a href={pub.links.pdf} target="_blank" rel="noopener noreferrer" aria-label={`${pub.title} PDF`} className="text-green hover:underline">pdf →</a>}
+        {pub.links?.doi && <a href={pub.links.doi} target="_blank" rel="noopener noreferrer" aria-label={`${pub.title} DOI`} className="text-green hover:underline">doi →</a>}
+        {pub.links?.arxiv && <a href={pub.links.arxiv} target="_blank" rel="noopener noreferrer" aria-label={`${pub.title} on arXiv`} className="text-green hover:underline">arxiv →</a>}
       </div>
     </article>
   )

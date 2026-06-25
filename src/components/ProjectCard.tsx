@@ -14,8 +14,8 @@ export function ProjectCard({ project }: { project: Project }) {
         ))}
       </ul>
       <div className="flex gap-4 mt-4 font-mono text-xs">
-        {project.links?.repo && <a href={project.links.repo} className="text-green hover:underline">repo →</a>}
-        {project.links?.demo && <a href={project.links.demo} className="text-green hover:underline">demo →</a>}
+        {project.links?.repo && <a href={project.links.repo} target="_blank" rel="noopener noreferrer" aria-label={`${project.title} repository`} className="text-green hover:underline">repo →</a>}
+        {project.links?.demo && <a href={project.links.demo} target="_blank" rel="noopener noreferrer" aria-label={`${project.title} demo`} className="text-green hover:underline">demo →</a>}
       </div>
     </article>
   )
