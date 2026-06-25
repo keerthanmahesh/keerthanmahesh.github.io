@@ -1,10 +1,12 @@
 import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
+import { BackgroundMesh } from './BackgroundMesh'
 import { Footer } from './Footer'
 
 export function Layout({ children }: { children: ReactNode }) {
   return (
     <div className="min-h-screen flex flex-col">
+      <BackgroundMesh />
       <nav className="sticky top-0 z-10 bg-bg/90 backdrop-blur border-b border-border">
         <div className="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between font-mono text-sm">
           <Link to="/" className="text-accent font-bold">~/keerthan</Link>
