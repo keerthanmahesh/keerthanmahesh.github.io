@@ -1,7 +1,13 @@
 # Portfolio Site — Design Spec
 
 **Date:** 2026-06-24
-**Status:** Approved (pending GitHub username)
+**Status:** Approved
+
+## Location
+
+- Local path: `~/Projects/keerthanmahesh.github.io`
+- GitHub repo: `keerthanmahesh/keerthanmahesh.github.io`
+- Live URL: `https://keerthanmahesh.github.io`
 
 ## Goal
 
@@ -115,6 +121,6 @@ Vitest + React Testing Library smoke tests:
 - Dark/light theme toggle (dark only)
 - Analytics
 
-## Open Item
+## Open Items
 
-- GitHub username (determines repo name `<username>.github.io` and final URL). Everything else is decided.
+None — all decisions resolved.
