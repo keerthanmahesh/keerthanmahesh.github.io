@@ -27,6 +27,7 @@ All content lives in typed data files — no component edits needed:
 
 - `src/data/profile.ts` — name, tagline, bio, social links, resume path
 - `src/data/projects.ts` — projects (set `featured: true` to surface on the home page)
+- `src/data/experience.ts` — work experience (set `featured: true` to surface on the home page)
 - `src/data/publications.ts` — research / publications
 - `public/resume.pdf` — your résumé (currently a placeholder)
 

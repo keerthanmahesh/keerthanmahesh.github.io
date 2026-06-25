@@ -9,6 +9,7 @@ export function Layout({ children }: { children: ReactNode }) {
         <div className="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between font-mono text-sm">
           <Link to="/" className="text-accent font-bold">~/keerthan</Link>
           <div className="flex gap-5 text-muted">
+            <Link to="/experience" className="hover:text-fg">experience</Link>
             <Link to="/projects" className="hover:text-fg">projects</Link>
             <Link to="/research" className="hover:text-fg">research</Link>
             <a href="/#contact" className="hover:text-fg">contact</a>

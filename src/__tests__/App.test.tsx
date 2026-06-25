@@ -22,4 +22,13 @@ describe('App routing', () => {
     )
     expect(screen.getByRole('heading', { name: /\/\/ projects/i })).toBeInTheDocument()
   })
+
+  it('renders ExperiencePage at /experience', () => {
+    render(
+      <MemoryRouter initialEntries={['/experience']}>
+        <App />
+      </MemoryRouter>,
+    )
+    expect(screen.getByRole('heading', { name: /\/\/ experience/i })).toBeInTheDocument()
+  })
 })

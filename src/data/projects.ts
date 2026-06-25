@@ -4,6 +4,7 @@ export type Project = {
   description: string
   tech: string[]
   links?: { repo?: string; demo?: string }
+  affiliation?: string
   date?: string
   featured?: boolean
 }
@@ -15,6 +16,7 @@ export const projects: Project[] = [
     description:
       'A multi-agent system on a production no-code platform that generates entire applications from a single prompt — an LLM orchestrator coordinating 18 specialized sub-agents for end-to-end workflow automation.',
     tech: ['Python', 'LangGraph', 'Multi-Agent Systems', 'LLM Orchestration'],
+    affiliation: 'konfigai-lead',
     date: '2023–Present',
     featured: true,
   },
@@ -24,6 +26,7 @@ export const projects: Project[] = [
     description:
       'A companion MCP tool server (FastMCP over SSE) exposing 100+ Konfig operations to LLMs, with tenacity-based retries, async connection pooling, per-request header forwarding, token-optimized response encoding, and integration across 7 LLM providers.',
     tech: ['Python', 'FastMCP', 'SSE', 'Async', 'MCP'],
+    affiliation: 'konfigai-lead',
     date: '2024',
     featured: true,
   },
@@ -42,6 +45,7 @@ export const projects: Project[] = [
     description:
       'A standalone AI agent that reviews merge requests, suggests enhancements, remediates SonarQube issues, resolves build failures, and analyzes Trivy vulnerability scans — improving code-quality and security-review efficiency.',
     tech: ['Python', 'LLM Agents', 'CI/CD', 'SonarQube', 'Trivy'],
+    affiliation: 'konfigai-lead',
     date: '2024',
     featured: false,
   },
@@ -51,6 +55,7 @@ export const projects: Project[] = [
     description:
       'An end-to-end geospatial decision-support web app built at the UMD Spatial Modeling & Remote Sensing Lab, serving 100+ farmers across Oklahoma and Kansas — interactive React Leaflet maps with low-latency, location-based data processing on AWS.',
     tech: ['React', 'Node.js', 'React Leaflet', 'AWS EC2', 'AWS S3'],
+    affiliation: 'umd-smars',
     date: '2022–2023',
     featured: false,
   },
@@ -60,6 +65,7 @@ export const projects: Project[] = [
     description:
       'A full-stack progressive web app (built during a JP Morgan internship) that visualizes relationships between entities in a Kubernetes cluster with color-coded workload performance and real-time pod/container log streams, cutting debugging time by 25%.',
     tech: ['React', 'Go', 'Kubernetes'],
+    affiliation: 'jpmc-intern',
     date: '2019',
     featured: false,
   },

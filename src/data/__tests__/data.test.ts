@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { profile } from '../profile'
 import { projects, featuredProjects } from '../projects'
 import { featuredPublications } from '../publications'
+import { experience, featuredExperience, experienceById } from '../experience'
 
 describe('content data', () => {
   it('profile has required fields', () => {
@@ -22,5 +23,25 @@ describe('content data', () => {
 
   it('featuredPublications returns only featured items', () => {
     expect(featuredPublications().every((p) => p.featured)).toBe(true)
+  })
+})
+
+describe('experience data', () => {
+  it('every role has a unique id and at least one highlight', () => {
+    const ids = experience.map((e) => e.id)
+    expect(new Set(ids).size).toBe(experience.length)
+    experience.forEach((e) => expect(e.highlights.length).toBeGreaterThan(0))
+  })
+  it('featuredExperience returns only featured roles', () => {
+    expect(featuredExperience().every((e) => e.featured)).toBe(true)
+  })
+  it('experienceById resolves a known id and returns undefined otherwise', () => {
+    expect(experienceById('konfigai-lead')?.company).toBe('KonfigAI')
+    expect(experienceById('nope')).toBeUndefined()
+  })
+  it('every project affiliation references a real experience id', () => {
+    projects.filter((p) => p.affiliation).forEach((p) => {
+      expect(experienceById(p.affiliation as string)).toBeDefined()
+    })
   })
 })

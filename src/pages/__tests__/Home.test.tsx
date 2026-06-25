@@ -13,6 +13,7 @@ describe('Home', () => {
     )
     expect(screen.getByRole('heading', { name: profile.name })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: /\/\/ about/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /\/\/ experience/i })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: /\/\/ projects/i })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: /\/\/ research/i })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: /\/\/ contact/i })).toBeInTheDocument()
