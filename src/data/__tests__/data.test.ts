@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import { profile } from '../profile'
 import { projects, featuredProjects } from '../projects'
-import { publications, featuredPublications } from '../publications'
+import { featuredPublications } from '../publications'
 
 describe('content data', () => {
   it('profile has required fields', () => {
