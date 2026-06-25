@@ -11,13 +11,12 @@ export type Publication = {
 
 export const publications: Publication[] = [
   {
-    id: 'example-paper',
-    title: 'Placeholder Research Title',
-    authors: 'Keerthan Mahesh, et al.',
-    venue: 'To be submitted',
-    year: 2026,
-    links: {},
-    summary: 'Placeholder — replace with a real publication or in-progress research. One or two sentences on the contribution.',
+    id: 'depression-semantics-reddit',
+    title:
+      'Investigating Depression Semantics on Reddit using Machine Learning and Deep Learning Techniques',
+    authors: 'S. Agarwal, K. Mahesh, P. Singh, J. Shah, N. Sanjeev',
+    summary:
+      'Applies machine learning and deep learning techniques to detect and analyze depression-related semantics in Reddit posts.',
     featured: true,
   },
 ]
