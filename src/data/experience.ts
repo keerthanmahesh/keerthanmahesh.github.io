@@ -12,6 +12,21 @@ export type Experience = {
 
 export const experience: Experience[] = [
   {
+    id: 'wells-fargo-sse',
+    company: 'Wells Fargo',
+    role: 'Senior Software Engineer',
+    location: 'Charlotte, NC',
+    start: 'July 2026',
+    end: 'Present',
+    highlights: [
+      'Leading the architecture and development of an enterprise-grade compliance monitoring web application using Spring Boot and React to automate the scoping, planning, and tracking of Risk Assessable Units (RAUs) against Major Requirements (MREs).',
+      'Designed a robust, normalized SQL database schema to model and query complex, multi-tiered relationships between risk categories, compliance frameworks, and organizational units.',
+      'Orchestrated CI/CD pipelines and automated deployments using Harness, ensuring secure, high-availability delivery across enterprise environments.',
+      'Built interactive React dashboards with automated compliance reporting, enabling risk management and compliance teams to monitor audit readiness in real time.',
+    ],
+    featured: true,
+  },
+  {
     id: 'konfigai-lead',
     company: 'KonfigAI',
     role: 'Backend Lead',
