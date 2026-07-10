@@ -32,7 +32,7 @@ export const experience: Experience[] = [
     role: 'Backend Lead',
     location: 'Charlotte, NC',
     start: 'May 2023',
-    end: 'Present',
+    end: 'July 2026',
     highlights: [
       'Sole architect of the core microservice of a production no-code platform; built Agentic AI that generates entire applications from a single prompt via an LLM orchestrator paired with 18 specialized sub-agents.',
       'Designed the companion MCP tool server (FastMCP over SSE) exposing 100+ operations with retries, async connection pooling, and token-optimized encoding across 7 LLM providers.',
