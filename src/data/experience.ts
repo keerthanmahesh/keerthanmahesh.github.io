@@ -19,7 +19,7 @@ export const experience: Experience[] = [
     start: 'July 2026',
     end: 'Present',
     highlights: [
-      'Leading the architecture and development of an enterprise-grade compliance monitoring web application using Spring Boot and React to automate the scoping, planning, and tracking of Risk Assessable Units (RAUs) against Major Requirements (MREs).',
+      'Leading the architecture and development of an enterprise-grade compliance monitoring web application using Spring Boot and React to automate the scoping, planning, and tracking of Risk Assessable Units (RAUs) and Compliance Assessable Units (CAUs) against Major Requirements (MREs).',
       'Designed a robust, normalized SQL database schema to model and query complex, multi-tiered relationships between risk categories, compliance frameworks, and organizational units.',
       'Orchestrated CI/CD pipelines and automated deployments using Harness, ensuring secure, high-availability delivery across enterprise environments.',
       'Built interactive React dashboards with automated compliance reporting, enabling risk management and compliance teams to monitor audit readiness in real time.',
