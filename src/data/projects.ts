@@ -17,7 +17,7 @@ export const projects: Project[] = [
       'A multi-agent system on a production no-code platform that generates entire applications from a single prompt — an LLM orchestrator coordinating 18 specialized sub-agents for end-to-end workflow automation.',
     tech: ['Python', 'LangGraph', 'Multi-Agent Systems', 'LLM Orchestration'],
     affiliation: 'konfigai-lead',
-    date: '2023–Present',
+    date: '2023–2026',
     featured: true,
   },
   {
@@ -34,7 +34,7 @@ export const projects: Project[] = [
     id: 'resume-intelligence',
     title: 'Resume Intelligence (RAG)',
     description:
-      'An end-to-end Retrieval-Augmented Generation pipeline for job-description ↔ resume matching: PDF/DOCX ingestion, semantic chunking, embedding generation, HNSW approximate-nearest-neighbor retrieval over a Weaviate vector store, cross-encoder reranking, and LLM-driven scoring, gap analysis, and tailoring recommendations.',
+      'An end-to-end RAG pipeline for Job-Description ↔ Resume matching: document ingestion (PDF/DOCX parsing) → semantic chunking → embedding generation (text-embedding-3-large) → HNSW-based Approximate Nearest Neighbors (ANN) retrieval over a Weaviate vector store → cross-encoder reranking → LLM-driven scoring, gap analysis, and tailoring recommendations using FastAPI.',
     tech: ['Python', 'FastAPI', 'RAG', 'Weaviate', 'Embeddings', 'Reranking'],
     date: '2024',
     featured: true,
@@ -43,7 +43,7 @@ export const projects: Project[] = [
     id: 'ai-mr-reviewer',
     title: 'AI Merge-Request Reviewer',
     description:
-      'A standalone AI agent that reviews merge requests, suggests enhancements, remediates SonarQube issues, resolves build failures, and analyzes Trivy vulnerability scans — improving code-quality and security-review efficiency.',
+      'A standalone AI agent that reviews merge requests, suggests enhancements, remediates SonarQube issues, resolves build failures, and analyzes Trivy vulnerability scan results — improving code-quality and security-review efficiency.',
     tech: ['Python', 'LLM Agents', 'CI/CD', 'SonarQube', 'Trivy'],
     affiliation: 'konfigai-lead',
     date: '2024',
@@ -53,7 +53,7 @@ export const projects: Project[] = [
     id: 'nitrogen-tool',
     title: 'Nitrogen Recommendation Tool',
     description:
-      'An end-to-end geospatial decision-support web app built at the UMD Spatial Modeling & Remote Sensing Lab, serving 100+ farmers across Oklahoma and Kansas — interactive React Leaflet maps with low-latency, location-based data processing on AWS.',
+      'An end-to-end geospatial decision-support web app built at the UMD Spatial Modeling & Remote Sensing Lab, serving 100+ farmers across Oklahoma and Kansas — featuring React Leaflet geospatial mapping that optimized location-based data processing.',
     tech: ['React', 'Node.js', 'React Leaflet', 'AWS EC2', 'AWS S3'],
     affiliation: 'umd-smars',
     date: '2022–2023',
@@ -63,8 +63,8 @@ export const projects: Project[] = [
     id: 'k8s-entity-visualizer',
     title: 'Kubernetes Entity Visualizer',
     description:
-      'A full-stack progressive web app (built during a JP Morgan internship) that visualizes relationships between entities in a Kubernetes cluster with color-coded workload performance and real-time pod/container log streams, cutting debugging time by 25%.',
-    tech: ['React', 'Go', 'Kubernetes'],
+      'A full-stack progressive web app (built during a JP Morgan internship) that visualizes relationships between entities in a Kubernetes cluster using D3 graph visualization.',
+    tech: ['React', 'Go', 'Kubernetes', 'D3'],
     affiliation: 'jpmc-intern',
     date: '2019',
     featured: false,
@@ -72,3 +72,4 @@ export const projects: Project[] = [
 ]
 
 export const featuredProjects = (): Project[] => projects.filter((p) => p.featured)
+
