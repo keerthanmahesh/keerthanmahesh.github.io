@@ -27,6 +27,7 @@ export const projects: Project[] = [
     tech: ['Next.js 14', 'React 18', 'TypeScript', 'Tailwind CSS', 'Fintech APIs', 'Edge Caching'],
     links: {
       repo: 'https://github.com/keerthanmahesh/remit-ranker',
+      demo: 'https://remit-ranker.vercel.app/',
     },
     date: '2026',
     featured: true,
