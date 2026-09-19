@@ -29,6 +29,7 @@ export const publications: Publication[] = [
       'An end-to-end geospatial decision-support web application for precision agriculture, serving 100+ farmers across Oklahoma and Kansas with React Leaflet mapping, localized soil/weather analytics, and optimized nitrogen application modeling.',
     links: {
       repo: 'https://github.com/smarsGroup/nitrogen-recommendation-tool',
+      demo: 'http://nitrogen-recommendation-tool.s3-website-us-east-1.amazonaws.com/',
     },
     featured: true,
   },
