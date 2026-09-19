@@ -1,6 +1,7 @@
 import konfigLogo from '../assets/konfig-logo.svg'
 import jpmcLogo from '../assets/jpmorganchase.png'
 import bitsLogo from '../assets/bits-pilani-logo.webp'
+import umdLogo from '../assets/umd-seal.webp'
 
 export function CompanyLogo({
   company,
@@ -48,20 +49,15 @@ export function CompanyLogo({
   if (norm.includes('umd') || norm.includes('maryland') || norm.includes('smars')) {
     return (
       <div
-        className={`${className} bg-[#E03A3E] rounded-md flex items-center justify-center p-1 shadow-sm select-none border border-[#b82a2d]`}
+        className={`${className} bg-white rounded-md flex items-center justify-center p-1 shadow-sm select-none border border-border overflow-hidden`}
         title="University of Maryland"
         aria-label="University of Maryland logo"
       >
-        <svg viewBox="0 0 40 40" className="w-full h-full" fill="none">
-          <rect width="40" height="40" rx="8" fill="#E03A3E" />
-          <path
-            d="M8 31V12H13L20 22L27 12H32V31H27V19L21.5 27.5H18.5L13 19V31H8Z"
-            fill="#FFD520"
-            stroke="#000000"
-            strokeWidth="1.2"
-            strokeLinejoin="round"
-          />
-        </svg>
+        <img
+          src={umdLogo}
+          alt="University of Maryland logo"
+          className="w-full h-full object-contain"
+        />
       </div>
     )
   }
