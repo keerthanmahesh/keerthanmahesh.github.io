@@ -11,26 +11,6 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: 'konfig-agentic-builder',
-    title: 'KonfigAI Agentic App Builder',
-    description:
-      'A multi-agent system on a production no-code platform that generates entire applications from a single prompt — an LLM orchestrator coordinating 18 specialized sub-agents for end-to-end workflow automation.',
-    tech: ['Python', 'LangGraph', 'Multi-Agent Systems', 'LLM Orchestration'],
-    affiliation: 'konfigai-lead',
-    date: '2023–2026',
-    featured: true,
-  },
-  {
-    id: 'konfig-mcp-server',
-    title: 'Konfig MCP Tool Server',
-    description:
-      'A companion MCP tool server (FastMCP over SSE) exposing 100+ Konfig operations to LLMs, with tenacity-based retries, async connection pooling, per-request header forwarding, token-optimized response encoding, and integration across 7 LLM providers.',
-    tech: ['Python', 'FastMCP', 'SSE', 'Async', 'MCP'],
-    affiliation: 'konfigai-lead',
-    date: '2024',
-    featured: true,
-  },
-  {
     id: 'resume-intelligence',
     title: 'Resume Intelligence (RAG)',
     description:
@@ -50,16 +30,6 @@ export const projects: Project[] = [
     },
     date: '2026',
     featured: true,
-  },
-  {
-    id: 'ai-mr-reviewer',
-    title: 'AI Merge-Request Reviewer',
-    description:
-      'A standalone AI agent that reviews merge requests, suggests enhancements, remediates SonarQube issues, resolves build failures, and analyzes Trivy vulnerability scan results — improving code-quality and security-review efficiency.',
-    tech: ['Python', 'LLM Agents', 'CI/CD', 'SonarQube', 'Trivy'],
-    affiliation: 'konfigai-lead',
-    date: '2024',
-    featured: false,
   },
   {
     id: 'k8s-entity-visualizer',
