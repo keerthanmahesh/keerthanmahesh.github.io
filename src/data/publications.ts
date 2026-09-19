@@ -15,8 +15,8 @@ export const publications: Publication[] = [
     title:
       'Investigating Depression Semantics on Reddit using Machine Learning and Deep Learning Techniques',
     authors: 'S. Agarwal, K. Mahesh, P. Singh, J. Shah, N. Sanjeev',
-    venue: 'Springer',
-    year: 2022,
+    venue: 'Birla Institute of Technology and Science',
+    year: 2020,
     summary:
       'Applies machine learning and deep learning techniques to detect and analyze depression-related semantics in Reddit posts.',
     links: {
