@@ -1,4 +1,5 @@
 import konfigLogo from '../assets/konfig-logo.svg'
+import jpmcLogo from '../assets/jpmorganchase.png'
 
 export function CompanyLogo({
   company,
@@ -68,20 +69,15 @@ export function CompanyLogo({
   if (norm.includes('jpmc') || norm.includes('jpmorgan') || norm.includes('chase') || norm.includes('jp morgan')) {
     return (
       <div
-        className={`${className} bg-[#0A2540] rounded-md flex items-center justify-center p-1 shadow-sm select-none border border-[#1a3b5c]`}
+        className={`${className} rounded-md flex items-center justify-center shadow-sm select-none border border-border overflow-hidden`}
         title="JP Morgan Chase & Co."
         aria-label="JP Morgan Chase logo"
       >
-        <svg viewBox="0 0 40 40" className="w-full h-full" fill="none">
-          <rect width="40" height="40" rx="8" fill="#0A2540" />
-          <g transform="translate(2, 2) scale(0.9)">
-            <path d="M12 5H28L35 12V28L28 35H12L5 28V12L12 5Z" stroke="#005EB8" strokeWidth="1" fill="#0A2540" />
-            <path d="M11 6L21 6L16 14L11 14Z" fill="#005EB8" />
-            <path d="M34 11L34 21L26 16L26 11Z" fill="#005EB8" />
-            <path d="M29 34L19 34L24 26L29 26Z" fill="#005EB8" />
-            <path d="M6 29L6 19L14 24L14 29Z" fill="#005EB8" />
-          </g>
-        </svg>
+        <img
+          src={jpmcLogo}
+          alt="JP Morgan Chase logo"
+          className="w-full h-full object-cover"
+        />
       </div>
     )
   }

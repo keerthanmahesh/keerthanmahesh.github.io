@@ -20,7 +20,7 @@ export function PublicationCard({ pub }: { pub: Publication }) {
             aria-label={`${pub.title} publication`}
             className="text-green hover:underline"
           >
-            {pub.links.doi.includes('springer') ? 'springer →' : 'doi →'}
+            publication →
           </a>
         )}
         {pub.links?.arxiv && <a href={pub.links.arxiv} target="_blank" rel="noopener noreferrer" aria-label={`${pub.title} on arXiv`} className="text-green hover:underline">arxiv →</a>}
