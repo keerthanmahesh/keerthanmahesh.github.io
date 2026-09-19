@@ -40,6 +40,18 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    id: 'remit-ranker',
+    title: 'RemitRanker',
+    description:
+      'A real-time USD → INR remittance intelligence platform aggregating quotes across 10+ fintech apps and global banks. Eliminates hidden FX markups by computing effective exchange rates, regulatory account routing (NRE, NRO, To Others), and ranking providers strictly by net rupee payout delivered.',
+    tech: ['Next.js 14', 'React 18', 'TypeScript', 'Tailwind CSS', 'Fintech APIs', 'Edge Caching'],
+    links: {
+      repo: 'https://github.com/keerthanmahesh/remit-ranker',
+    },
+    date: '2026',
+    featured: true,
+  },
+  {
     id: 'ai-mr-reviewer',
     title: 'AI Merge-Request Reviewer',
     description:
