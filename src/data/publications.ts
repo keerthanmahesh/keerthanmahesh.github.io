@@ -4,7 +4,7 @@ export type Publication = {
   authors: string
   venue?: string
   year?: number
-  links?: { pdf?: string; doi?: string; arxiv?: string; repo?: string }
+  links?: { pdf?: string; doi?: string; arxiv?: string; repo?: string; demo?: string }
   summary?: string
   featured?: boolean
 }
@@ -29,6 +29,20 @@ export const publications: Publication[] = [
       'An end-to-end geospatial decision-support web application for precision agriculture, serving 100+ farmers across Oklahoma and Kansas with React Leaflet mapping, localized soil/weather analytics, and optimized nitrogen application modeling.',
     links: {
       repo: 'https://github.com/smarsGroup/nitrogen-recommendation-tool',
+    },
+    featured: true,
+  },
+  {
+    id: 'smarslab-webpage',
+    title: 'SMaRS Lab Web Platform',
+    authors: 'K. Mahesh, D. Radhakrishna, P. K. V. Meduri, Dr. V. Bandaru',
+    venue: 'Spatial Modeling & Remote Sensing Lab (SMaRS), University of Maryland',
+    year: 2023,
+    summary:
+      'The official web platform and research portal for the SMaRS Lab at UMD, presenting agricultural decision-support systems, remote sensing research, lab publications, and geospatial tools.',
+    links: {
+      repo: 'https://github.com/smarsGroup/smarslab-webpage',
+      demo: 'https://www.smarsgroup.org/',
     },
     featured: true,
   },
