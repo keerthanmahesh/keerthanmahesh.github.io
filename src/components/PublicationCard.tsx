@@ -14,6 +14,7 @@ export function PublicationCard({ pub }: { pub: Publication }) {
         {pub.links?.pdf && <a href={pub.links.pdf} target="_blank" rel="noopener noreferrer" aria-label={`${pub.title} PDF`} className="text-green hover:underline">pdf →</a>}
         {pub.links?.doi && <a href={pub.links.doi} target="_blank" rel="noopener noreferrer" aria-label={`${pub.title} DOI`} className="text-green hover:underline">doi →</a>}
         {pub.links?.arxiv && <a href={pub.links.arxiv} target="_blank" rel="noopener noreferrer" aria-label={`${pub.title} on arXiv`} className="text-green hover:underline">arxiv →</a>}
+        {pub.links?.repo && <a href={pub.links.repo} target="_blank" rel="noopener noreferrer" aria-label={`${pub.title} repository`} className="text-green hover:underline">repo →</a>}
       </div>
     </article>
   )

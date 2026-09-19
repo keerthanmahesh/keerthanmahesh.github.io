@@ -62,16 +62,6 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: 'nitrogen-tool',
-    title: 'Nitrogen Recommendation Tool',
-    description:
-      'An end-to-end geospatial decision-support web app built at the UMD Spatial Modeling & Remote Sensing Lab, serving 100+ farmers across Oklahoma and Kansas — featuring React Leaflet geospatial mapping that optimized location-based data processing.',
-    tech: ['React', 'Node.js', 'React Leaflet', 'AWS EC2', 'AWS S3'],
-    affiliation: 'umd-smars',
-    date: '2022–2023',
-    featured: false,
-  },
-  {
     id: 'k8s-entity-visualizer',
     title: 'Kubernetes Entity Visualizer',
     description:
