@@ -26,11 +26,6 @@ export function Home() {
         </Link>
       </section>
 
-      <section id="education" className="py-12">
-        <SectionHeading title="education" />
-        <EducationList items={education} />
-      </section>
-
       <section id="projects" className="py-12">
         <SectionHeading title="projects" />
         <ProjectsGrid projects={featuredProjects()} />
@@ -45,6 +40,11 @@ export function Home() {
         <Link to="/research" className="inline-block mt-6 font-mono text-sm text-green hover:underline">
           all research →
         </Link>
+      </section>
+
+      <section id="education" className="py-12">
+        <SectionHeading title="education" />
+        <EducationList items={education} />
       </section>
 
       <Contact />

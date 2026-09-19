@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
-    "postbuild": "cp dist/index.html dist/404.html"
+    "postbuild": "node -e \"const fs = require('node:fs'); fs.copyFileSync('dist/index.html', 'dist/404.html');\""
   },
   "dependencies": {
     "react": "^19.2.7",

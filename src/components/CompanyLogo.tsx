@@ -1,5 +1,6 @@
 import konfigLogo from '../assets/konfig-logo.svg'
 import jpmcLogo from '../assets/jpmorganchase.png'
+import bitsLogo from '../assets/bits-pilani-logo.webp'
 
 export function CompanyLogo({
   company,
@@ -86,18 +87,15 @@ export function CompanyLogo({
   if (norm.includes('bits') || norm.includes('pilani') || norm.includes('birla')) {
     return (
       <div
-        className={`${className} bg-[#0B2545] rounded-md flex items-center justify-center p-1 shadow-sm select-none border border-[#134074]`}
-        title="BITS Pilani"
+        className={`${className} bg-white rounded-md flex items-center justify-center p-1 shadow-sm select-none border border-border overflow-hidden`}
+        title="Birla Institute of Technology and Science"
         aria-label="BITS Pilani logo"
       >
-        <svg viewBox="0 0 40 40" className="w-full h-full" fill="none">
-          <rect width="40" height="40" rx="8" fill="#0B2545" />
-          <circle cx="20" cy="20" r="14" fill="#0B2545" stroke="#FDB913" strokeWidth="1.5" />
-          <circle cx="20" cy="20" r="10" stroke="#FDB913" strokeWidth="1" strokeDasharray="3 2" />
-          <path d="M19 11C19 9 20 8 20 8C20 8 21 9 21 11C22 12 21 14 20 15C19 14 18 12 19 11Z" fill="#EF4444" />
-          <path d="M17 15H23L21.5 22H18.5L17 15Z" fill="#FDB913" />
-          <rect x="19" y="22" width="2" height="6" fill="#FDB913" />
-        </svg>
+        <img
+          src={bitsLogo}
+          alt="BITS Pilani logo"
+          className="w-full h-full object-contain"
+        />
       </div>
     )
   }

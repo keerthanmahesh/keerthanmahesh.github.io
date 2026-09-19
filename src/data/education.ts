@@ -25,6 +25,6 @@ export const education: Education[] = [
     field: 'Electrical and Electronics Engineering',
     start: 'Aug 2016',
     end: 'Aug 2020',
-    location: 'Pilani, India',
+    location: 'Goa, India',
   },
 ]
