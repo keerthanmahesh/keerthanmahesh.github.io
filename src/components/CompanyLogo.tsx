@@ -1,3 +1,5 @@
+import konfigLogo from '../assets/konfig-logo.svg'
+
 export function CompanyLogo({
   company,
   id,
@@ -27,23 +29,15 @@ export function CompanyLogo({
   if (norm.includes('konfig')) {
     return (
       <div
-        className={`${className} bg-[#16172e] rounded-md flex items-center justify-center p-1 shadow-sm select-none border border-[#3b3a6d]`}
+        className={`${className} bg-white rounded-md flex items-center justify-center p-1 shadow-sm select-none border border-border overflow-hidden`}
         title="KonfigAI"
         aria-label="KonfigAI logo"
       >
-        <svg viewBox="0 0 40 40" className="w-full h-full" fill="none">
-          <rect width="40" height="40" rx="8" fill="#1E1E38" />
-          <path d="M12 9V31M12 20L25 9M16 17L28 31" stroke="url(#konfig-grad)" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-          <circle cx="25" cy="9" r="2.5" fill="#06B6D4" />
-          <circle cx="28" cy="31" r="2.5" fill="#A855F7" />
-          <circle cx="12" cy="20" r="2" fill="#38BDF8" />
-          <defs>
-            <linearGradient id="konfig-grad" x1="12" y1="9" x2="28" y2="31" gradientUnits="userSpaceOnUse">
-              <stop stopColor="#06B6D4" />
-              <stop offset="1" stopColor="#A855F7" />
-            </linearGradient>
-          </defs>
-        </svg>
+        <img
+          src={konfigLogo}
+          alt="KonfigAI logo"
+          className="w-full h-full object-contain"
+        />
       </div>
     )
   }
