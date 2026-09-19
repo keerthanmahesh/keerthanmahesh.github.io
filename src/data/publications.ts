@@ -15,8 +15,13 @@ export const publications: Publication[] = [
     title:
       'Investigating Depression Semantics on Reddit using Machine Learning and Deep Learning Techniques',
     authors: 'S. Agarwal, K. Mahesh, P. Singh, J. Shah, N. Sanjeev',
+    venue: 'Springer',
+    year: 2022,
     summary:
       'Applies machine learning and deep learning techniques to detect and analyze depression-related semantics in Reddit posts.',
+    links: {
+      doi: 'https://link.springer.com/chapter/10.1007/978-3-030-92310-5_75',
+    },
     featured: true,
   },
   {

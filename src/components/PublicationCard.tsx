@@ -12,7 +12,17 @@ export function PublicationCard({ pub }: { pub: Publication }) {
       {pub.summary && <p className="text-fg/80 text-sm mt-2 leading-relaxed">{pub.summary}</p>}
       <div className="flex gap-4 mt-2 font-mono text-xs">
         {pub.links?.pdf && <a href={pub.links.pdf} target="_blank" rel="noopener noreferrer" aria-label={`${pub.title} PDF`} className="text-green hover:underline">pdf →</a>}
-        {pub.links?.doi && <a href={pub.links.doi} target="_blank" rel="noopener noreferrer" aria-label={`${pub.title} DOI`} className="text-green hover:underline">doi →</a>}
+        {pub.links?.doi && (
+          <a
+            href={pub.links.doi}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`${pub.title} publication`}
+            className="text-green hover:underline"
+          >
+            {pub.links.doi.includes('springer') ? 'springer →' : 'doi →'}
+          </a>
+        )}
         {pub.links?.arxiv && <a href={pub.links.arxiv} target="_blank" rel="noopener noreferrer" aria-label={`${pub.title} on arXiv`} className="text-green hover:underline">arxiv →</a>}
         {pub.links?.repo && <a href={pub.links.repo} target="_blank" rel="noopener noreferrer" aria-label={`${pub.title} repository`} className="text-green hover:underline">repo →</a>}
         {pub.links?.demo && <a href={pub.links.demo} target="_blank" rel="noopener noreferrer" aria-label={`${pub.title} live demo`} className="text-green hover:underline">demo →</a>}

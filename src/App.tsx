@@ -3,6 +3,7 @@ import { Layout } from './components/Layout'
 import { ScrollToHash } from './components/ScrollToHash'
 import { Home } from './pages/Home'
 import { ExperiencePage } from './pages/ExperiencePage'
+import { EducationPage } from './pages/EducationPage'
 import { ProjectsPage } from './pages/ProjectsPage'
 import { ResearchPage } from './pages/ResearchPage'
 
@@ -13,6 +14,7 @@ export function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/experience" element={<ExperiencePage />} />
+        <Route path="/education" element={<EducationPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/research" element={<ResearchPage />} />
       </Routes>

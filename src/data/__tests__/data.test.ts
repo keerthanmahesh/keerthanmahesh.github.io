@@ -3,6 +3,7 @@ import { profile } from '../profile'
 import { projects, featuredProjects } from '../projects'
 import { featuredPublications } from '../publications'
 import { experience, featuredExperience, experienceById } from '../experience'
+import { education } from '../education'
 
 describe('content data', () => {
   it('profile has required fields', () => {
@@ -42,6 +43,18 @@ describe('experience data', () => {
   it('every project affiliation references a real experience id', () => {
     projects.filter((p) => p.affiliation).forEach((p) => {
       expect(experienceById(p.affiliation as string)).toBeDefined()
+    })
+  })
+})
+
+describe('education data', () => {
+  it('every education entry has required fields', () => {
+    const ids = education.map((e) => e.id)
+    expect(new Set(ids).size).toBe(education.length)
+    education.forEach((e) => {
+      expect(e.institution).toBeTruthy()
+      expect(e.degree).toBeTruthy()
+      expect(e.field).toBeTruthy()
     })
   })
 })

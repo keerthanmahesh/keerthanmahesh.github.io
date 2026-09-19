@@ -31,4 +31,13 @@ describe('App routing', () => {
     )
     expect(screen.getByRole('heading', { name: /\/\/ experience/i })).toBeInTheDocument()
   })
+
+  it('renders EducationPage at /education', () => {
+    render(
+      <MemoryRouter initialEntries={['/education']}>
+        <App />
+      </MemoryRouter>,
+    )
+    expect(screen.getByRole('heading', { name: /\/\/ education/i })).toBeInTheDocument()
+  })
 })

@@ -4,10 +4,12 @@ import { About } from '../components/About'
 import { SectionHeading } from '../components/SectionHeading'
 import { ProjectsGrid } from '../components/ProjectsGrid'
 import { ExperienceList } from '../components/ExperienceList'
+import { EducationList } from '../components/EducationList'
 import { ResearchList } from '../components/ResearchList'
 import { Contact } from '../components/Contact'
 import { featuredProjects } from '../data/projects'
 import { featuredExperience } from '../data/experience'
+import { education } from '../data/education'
 import { featuredPublications } from '../data/publications'
 
 export function Home() {
@@ -22,6 +24,11 @@ export function Home() {
         <Link to="/experience" className="inline-block mt-6 font-mono text-sm text-green hover:underline">
           all experience →
         </Link>
+      </section>
+
+      <section id="education" className="py-12">
+        <SectionHeading title="education" />
+        <EducationList items={education} />
       </section>
 
       <section id="projects" className="py-12">
