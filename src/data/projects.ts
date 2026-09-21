@@ -32,6 +32,18 @@ export const projects: Project[] = [
     date: '2026',
     featured: true,
   },
+  {
+    id: 'pivot',
+    title: 'Pivot',
+    description:
+      'A real-time cash-drag and Treasury yield optimization platform evaluating idle liquid cash across checking buffers, HYSAs, short-term Treasury bond ETFs (SGOV, USFR, BIL), and direct T-Bills. Models exact federal, state, and local tax-equivalent yields (TEY) to quantify lost yield and automate capital reallocation.',
+    tech: ['Next.js 14', 'React 18', 'TypeScript', 'Tailwind CSS', 'Spring Boot', 'Java 21', 'MongoDB'],
+    links: {
+      demo: 'https://pivot-ui.vercel.app/',
+    },
+    date: '2026',
+    featured: true,
+  },
 ]
 
 export const featuredProjects = (): Project[] => projects.filter((p) => p.featured)
