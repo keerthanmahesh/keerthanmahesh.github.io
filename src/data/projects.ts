@@ -56,6 +56,18 @@ export const projects: Project[] = [
     date: '2026',
     featured: true,
   },
+  {
+    id: 'summa',
+    title: 'Summa',
+    description:
+      'A real-time personal wealth and portfolio intelligence platform aggregating financial accounts across 12,000+ banks and brokerages via Plaid and SnapTrade. Features automated multi-tier valuation engines for real estate and automotive assets, net-worth analytics, and field-level AES-256-GCM encrypted credential storage.',
+    tech: ['Next.js 14', 'React 18', 'TypeScript', 'Tailwind CSS', 'Spring Boot', 'Java 21', 'MongoDB', 'Plaid API'],
+    links: {
+      demo: 'https://summa-ui.vercel.app/',
+    },
+    date: '2026',
+    featured: true,
+  },
 ]
 
 export const featuredProjects = (): Project[] => projects.filter((p) => p.featured)
