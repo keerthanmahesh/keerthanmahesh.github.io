@@ -44,6 +44,18 @@ export const projects: Project[] = [
     date: '2026',
     featured: true,
   },
+  {
+    id: 'caliber',
+    title: 'Caliber',
+    description:
+      'An automated recruiter email intelligence and recruitment pipeline platform. Ingests incoming recruiter emails via Gmail API, classifies contract types (C2C, W2, C2H, FTE) using a hybrid regex and multi-tier LLM engine (Ollama & Gemini), and streamlines candidate workflows with 1-click thread-preserving response dispatch and resume attachments.',
+    tech: ['Next.js 14', 'React 18', 'TypeScript', 'Tailwind CSS', 'Spring Boot', 'Java 21', 'MongoDB', 'LLMs'],
+    links: {
+      demo: 'https://caliber-ui.vercel.app/',
+    },
+    date: '2026',
+    featured: true,
+  },
 ]
 
 export const featuredProjects = (): Project[] => projects.filter((p) => p.featured)

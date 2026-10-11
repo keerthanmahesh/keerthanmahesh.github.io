@@ -22,12 +22,13 @@ describe('ProjectCard affiliation badge', () => {
     expect(link).toHaveAttribute('href', '/experience#exp-konfigai-lead')
   })
 
-  it('renders a Personal tag for non-affiliated projects', () => {
+  it('does not render an affiliation badge or Personal tag for non-affiliated projects', () => {
     render(
       <MemoryRouter>
         <ProjectCard project={personal} />
       </MemoryRouter>,
     )
-    expect(screen.getByText('Personal')).toBeInTheDocument()
+    expect(screen.queryByText('Personal')).not.toBeInTheDocument()
+    expect(screen.queryByRole('link', { name: /work experience/i })).not.toBeInTheDocument()
   })
 })

@@ -10,8 +10,8 @@ export function ProjectCard({ project }: { project: Project }) {
         <h3 className="font-mono font-bold text-fg">{project.title}</h3>
         {project.date && <span className="text-muted text-xs font-mono">{project.date}</span>}
       </div>
-      <div className="mt-1">
-        {exp ? (
+      {exp && (
+        <div className="mt-1">
           <Link
             to={`/experience#exp-${exp.id}`}
             className="inline-block font-mono text-xs text-green border border-green/40 rounded px-2 py-0.5 hover:bg-green/10"
@@ -19,12 +19,8 @@ export function ProjectCard({ project }: { project: Project }) {
           >
             @ {exp.company}
           </Link>
-        ) : (
-          <span className="inline-block font-mono text-xs text-muted border border-border rounded px-2 py-0.5">
-            Personal
-          </span>
-        )}
-      </div>
+        </div>
+      )}
       <p className="text-fg/80 text-sm mt-2 leading-relaxed">{project.description}</p>
       <ul className="flex flex-wrap gap-2 mt-4">
         {project.tech.map((t) => (
